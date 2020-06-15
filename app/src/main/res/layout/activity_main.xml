@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4D4D4"
+
+    tools:context=".MainActivity" >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="24dp"
+        android:background="#8F1818"
+        android:backgroundTint="#BD1717"
+        android:backgroundTintMode="add"
+        app:cardBackgroundColor="#EFEEEE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="450dp"
+            android:clickable="true"
+            android:text="Skip"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:paddingTop="20dp"
+            android:text="We're so delighted\nYou'are Here"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="40dp"
+            android:paddingTop="80dp"
+            app:srcCompat="@drawable/images" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Collect Your Gift\nOn Entering Invite Code"
+
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:ems="10"
+            android:hint="Invite Code"
+            android:inputType="textPersonName"
+            android:paddingLeft="60dp"
+
+            android:paddingRight="60dp"
+            android:textAlignment="center"
+            android:textColorHighlight="#F1E5E5"
+            android:textColorLink="#C8AAAA"
+            android:textCursorDrawable="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:backgroundTint="#EF5959"
+            android:onClick="add"
+            android:text="Redeem Now"
+            android:textColor="#F3ECEC"
+            android:textColorHint="#CDBFBF" />
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="480dp"
+            android:background="#B54343"
+            android:onClick="Share"
+            android:text="Share"
+            android:textColor="#F3EEEE" />
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
